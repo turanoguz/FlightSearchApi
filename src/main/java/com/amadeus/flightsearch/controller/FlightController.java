@@ -53,7 +53,6 @@ public class FlightController {
 		flightService.delete(id);
 	}
 	
-	//@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
 	@GetMapping("/search")
 	public SearchResponse findFlights(@RequestParam(name = "departureAirport") Airport departureAirport,
 			@RequestParam(name = "arrivalAirport") Airport arrivalAirport,
