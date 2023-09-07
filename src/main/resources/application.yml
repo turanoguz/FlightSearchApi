@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/amadeus
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
+application:
+  security:
+    jwt:
+      secret-key: 229B574173B78641D2C52835B5F49B67297DCB85CD7AFC79753983DDA6523D31
+      expiration: 86400000 
